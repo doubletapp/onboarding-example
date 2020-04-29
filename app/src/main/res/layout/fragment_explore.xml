@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <View
+    android:id="@+id/exploreBackground"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_explore_background"
+    app:layout_constraintBottom_toBottomOf="@id/exploreButton"
+    app:layout_constraintDimensionRatio="w,1:1.08"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+  <View
+    android:id="@+id/exploreBackgroundBlurred"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:alpha="0"
+    android:background="@drawable/ic_explore_background_blurred"
+    app:layout_constraintBottom_toBottomOf="@id/exploreBackground"
+    app:layout_constraintEnd_toEndOf="@id/exploreBackground"
+    app:layout_constraintStart_toStartOf="@id/exploreBackground"
+    app:layout_constraintTop_toTopOf="@id/exploreBackground"/>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/exploreLayoutFooter"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@id/exploreTitleSpace">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/exploreFooterLayout"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <View
+        android:id="@+id/exploreFooter"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_tutorial_footer"
+        app:layout_constraintDimensionRatio="w,1:2.42"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+      <View
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/exploreFooter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exploreFooter"/>
+
+      <View
+        android:id="@+id/exploreFooter2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exploreFooter"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <ImageView
+    android:id="@+id/exploreButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="40dp"
+    android:layout_marginEnd="40dp"
+    android:src="@drawable/ic_explore_button"
+    app:layout_constraintBottom_toTopOf="@id/exploreTitle"
+    app:layout_constraintEnd_toEndOf="parent"
+    tools:ignore="ContentDescription"/>
+
+  <ImageView
+    android:id="@+id/exploreDistance"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_explore_distance"
+    android:translationY="@dimen/explore_distance_translation"
+    android:translationX="@dimen/explore_distance_translation"
+    app:layout_constraintTop_toTopOf="@id/exploreButton"
+    app:layout_constraintStart_toStartOf="@id/exploreButton"
+    tools:ignore="ContentDescription"/>
+
+  <View
+    android:id="@+id/exploreTitleSpace"
+    android:layout_width="0dp"
+    android:layout_height="109dp"
+    app:layout_constraintBottom_toTopOf="@id/exploreTitle"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+  <TextView
+      android:id="@+id/exploreTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="15dp"
+      android:text="@string/explore_title"
+      android:textAllCaps="true"
+      android:textColor="@color/black"
+      android:textSize="25sp"
+      app:layout_constraintBottom_toTopOf="@id/exploreDescription"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <TextView
+    android:id="@+id/exploreDescription"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="145dp"
+    android:layout_marginStart="13dp"
+    android:layout_marginEnd="13dp"
+    android:gravity="center_horizontal"
+    android:lines="2"
+    android:maxLines="2"
+    android:text="@string/explore_description"
+    android:textColor="@color/black"
+    android:textSize="14sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

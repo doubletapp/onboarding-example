@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start_button">Начать</string>
+    <string name="skip_button">Пропустить</string>
+    <string name="select_title">выбирайте</string>
+    <string name="select_description">понравившихся вам исполнителей или ближайшие к вам сцены.</string>
+    <string name="share_title">делитесь</string>
+    <string name="share_description">вашей геолокацией с друзьями  во время фестиваля</string>
+    <string name="explore_title">исследуйте</string>
+    <string name="explore_description">ночь музыки с помощью  удобной навигации</string>
+    <string name="create_title">создавайте</string>
+    <string name="create_description">свой собственный маршрут по Ural Music Night</string>
+    <string name="map_friends_enable">Включить поиск друзей</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="select_selected_translation">100dp</dimen>
+    <dimen name="select_button_translation">300dp</dimen>
+    <dimen name="explore_distance_translation">-10dp</dimen>
+    <dimen name="explore_distance_shifted">450dp</dimen>
+</resources>
